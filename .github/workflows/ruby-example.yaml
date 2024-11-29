@@ -1,5 +1,4 @@
 name: Ruby on Rails test routine
-
 on:
   push:
     branches:
