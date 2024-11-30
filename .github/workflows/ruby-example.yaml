@@ -21,6 +21,11 @@ jobs:
         wget https://files.lando.dev/installer/lando-x64-stable.deb
         sudo dpkg --ignore-depends=docker-ce -i lando-x64-stable.deb
         python renovate.lock
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: "0"
+
 
 #    - name: Report versions
 #      run: |
